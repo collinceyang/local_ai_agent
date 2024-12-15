@@ -15,6 +15,7 @@ from fastapi.staticfiles import StaticFiles
 
 load_dotenv()
 web_auth = os.getenv('web_auth')
+web_auth = 'user:mypasswd'
 web_user, web_passwd = web_auth.split(':')
 
 

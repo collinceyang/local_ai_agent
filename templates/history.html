@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <style>
+        .offline {
+            color: red;
+        }
+    </style>
+    <style>
+       .issue{
+           color: red;
+       }
+    </style>
+    <style>
+        .Enable{
+           color: red;
+	}
+    </style>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">AI Agent History </h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>user_input</th>
+                    <th>ai_output</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.user_input }}</td>
+                    <td>{{ item.ai_output }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+        <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+            <a href="/" class="btn btn-primary">Submit More Data to AI Agent</a>
+        </div>
+    </div>
+    <br>
+
+</body>
+</html>

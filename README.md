@@ -7,8 +7,8 @@ install ollama in your local host
 https://github.com/ollama/ollama
 
 ### validation PASS 
-macOS 15.2 24C101
-MACBOOK PRO M1 Pro 16GB
+macOS 15.2 24C101 \
+MACBOOK PRO M1 Pro 16GB \
 ollama 0.5.1
 - llama3.2
 - llama3

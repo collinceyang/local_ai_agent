@@ -1,0 +1,8 @@
+requests 
+python-multipart
+python-dotenv
+psutil 
+PyYAML 
+fastapi 
+jinja2 
+uvicorn 

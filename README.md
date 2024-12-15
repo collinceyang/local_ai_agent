@@ -3,6 +3,7 @@ personal ai agent by local LLM (llama...)
 
 ## pre-requirements
 install ollama in your local host
+
 https://github.com/ollama/ollama
 
 ### validation PASS 

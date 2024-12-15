@@ -23,3 +23,6 @@ send questions to AI Agent
 
 ### http://localhost:8080/dump_data
 save current ai conversation history to agent_user.json
+
+### http://localhost:8080/history
+show all ai agent conversation 

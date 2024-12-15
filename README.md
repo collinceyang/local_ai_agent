@@ -1,6 +1,18 @@
 # local_ai_agent
 personal ai agent by local LLM (llama...)
 
+## pre-requirements
+install ollama in your local host
+
+### validation PASS 
+macOS 15.2 24C101
+MACBOOK PRO M1 Pro 16GB
+ollama 0.5.1
+- llama3.2
+- llama3
+python3 3.12/3.13
+
+
 ## local python script mode
 python3 local_aiagent.py
 

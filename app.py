@@ -2,7 +2,7 @@ import json
 import os
 import requests
 from requests.auth import HTTPBasicAuth
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from typing import Dict
 from fastapi import FastAPI, Depends, HTTPException, status, Request, Form
 from fastapi.security import HTTPBasic, HTTPBasicCredentials

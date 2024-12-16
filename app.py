@@ -1,7 +1,6 @@
 import json
 import os
 import requests
-import requests
 from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
 from typing import Dict
@@ -13,7 +12,9 @@ from fastapi.requests import Request
 from fastapi.staticfiles import StaticFiles
 
 
-load_dotenv()
+print("Listening on PORT:", os.getenv("PORT"))
+
+# load_dotenv()
 # web_auth = os.getenv('web_auth')
 web_auth = 'user:mypasswd'
 web_user, web_passwd = web_auth.split(':')
@@ -135,5 +136,8 @@ def get_dumpdata():
 def read_history(request: Request):
     return templates.TemplateResponse("history.html", {"request": request, "data": data_agent})
 
-
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8080))  # Use the PORT env variable
+    uvicorn.run(app, host="0.0.0.0", port=port)
     
